@@ -1,26 +1,20 @@
+//import react into the bundle
 import React from "react";
+import ReactDOM from "react-dom";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+//include bootstrap npm library into the bundle
 
-//create your first component
+//include your index.scss file into the bundle
+
+//import your own components
+import { Traficlight } from "./Traficlight.jsx";
+
+//render your react application
 const Home = () => {
 	return (
 		<div>
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+			<Traficlight />
 		</div>
 	);
 };
-
 export default Home;
